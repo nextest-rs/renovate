@@ -3,18 +3,6 @@
     "extends": [
         "config:base"
     ],
-    "platform": "github",
-    "packageFile": [
-        "Cargo.toml"
-    ],
-    "repositories": [
-        "nextest-rs/nextest"
-    ],
-    "allowedPostUpgradeCommands": [
-        "^scripts/renovate-post-upgrade.sh$"
-    ],
-    "onboarding": false,
-    "requireConfig": "optional",
     "packageRules": [
         {
             "matchUpdateTypes": [

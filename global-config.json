@@ -1,0 +1,17 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:base"
+    ],
+    "platform": "github",
+    "packageFile": [
+        "Cargo.toml"
+    ],
+    "repositories": [
+        "nextest-rs/nextest"
+    ],
+    "allowedPostUpgradeCommands": [
+        "^scripts/renovate-post-upgrade.sh$"
+    ],
+    "onboarding": false
+}
