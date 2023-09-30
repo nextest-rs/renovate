@@ -1,13 +1,28 @@
 name: Renovate
 on:
   workflow_dispatch:
+    inputs:
+      log-level:
+        description: "Log level"
+        required: true
+        default: "INFO"
+        type: choice
+        options:
+          - "TRACE"
+          - "DEBUG"
+          - "INFO"
+          - "WARN"
+          - "ERROR"
   schedule:
     # The "*" (#42, asterisk) character has special semantics in YAML, so this
     # string has to be quoted.
     - cron: "0/15 * * * *"
+
 jobs:
   renovate:
     runs-on: ubuntu-latest
+    env:
+      LOG_LEVEL: ${{ github.event.inputs.log-level }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3.6.0
@@ -16,3 +31,4 @@ jobs:
         with:
           configurationFile: config.json
           token: ${{ secrets.RENOVATE_TOKEN }}
+          env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL)$"
