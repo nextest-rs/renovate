@@ -1,0 +1,35 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:base"
+    ],
+    "platform": "github",
+    "packageFile": [
+        "Cargo.toml"
+    ],
+    "repositories": [
+        "nextest-rs/nextest"
+    ],
+    "allowedPostUpgradeCommands": [
+        "^./scripts/renovate-post-upgrade.sh"
+    ],
+    "onboarding": false,
+    "requireConfig": "optional",
+    "packageRules": [
+        {
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "groupName": "dependencies",
+            "automerge": false
+        },
+        {
+            "matchUpdateTypes": [
+                "major"
+            ],
+            "groupName": "dependencies-major",
+            "automerge": false
+        }
+    ]
+}
