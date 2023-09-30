@@ -4,6 +4,8 @@
         "config:recommended"
     ],
     "timezone": "America/Los_Angeles",
+    "schedule": ["after 8pm and before 6am"],
+    "automergeSchedule": ["after 8pm and before 6am"],
     "packageRules": [
         {
             "matchUpdateTypes": [
