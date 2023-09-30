@@ -14,15 +14,13 @@ on:
           - "WARN"
           - "ERROR"
   schedule:
-    # The "*" (#42, asterisk) character has special semantics in YAML, so this
-    # string has to be quoted.
     - cron: "0/15 * * * *"
 
 jobs:
   renovate:
     runs-on: ubuntu-latest
     env:
-      LOG_LEVEL: ${{ github.event.inputs.log-level }}
+      LOG_LEVEL: ${{ github.event.inputs.log-level || 'INFO' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3.6.0
