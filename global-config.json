@@ -4,11 +4,9 @@
         "config:base"
     ],
     "platform": "github",
-    "packageFile": [
-        "Cargo.toml"
-    ],
     "repositories": [
-        "nextest-rs/nextest"
+        "nextest-rs/nextest",
+        "nextest-rs/renovate"
     ],
     "allowedPostUpgradeCommands": [
         "^scripts/renovate-post-upgrade.sh$"
