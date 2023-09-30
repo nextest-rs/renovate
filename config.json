@@ -18,17 +18,15 @@
     "packageRules": [
         {
             "matchUpdateTypes": [
-                "minor",
                 "patch"
             ],
-            "groupName": "dependencies",
-            "automerge": false
+            "automerge": true,
+            "autoMergeType": "pr"
         },
         {
             "matchUpdateTypes": [
                 "major"
             ],
-            "groupName": "dependencies-major",
             "automerge": false
         }
     ]
