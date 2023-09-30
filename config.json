@@ -11,7 +11,7 @@
         "nextest-rs/nextest"
     ],
     "allowedPostUpgradeCommands": [
-        "^./scripts/renovate-post-upgrade.sh$"
+        "^scripts/renovate-post-upgrade.sh$"
     ],
     "onboarding": false,
     "requireConfig": "optional",
