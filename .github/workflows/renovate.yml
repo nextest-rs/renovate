@@ -16,6 +16,10 @@ on:
   schedule:
     - cron: "0/15 * * * *"
 
+concurrency:
+  # Only let one renovate job run at a time
+  group: renovate
+
 jobs:
   renovate:
     runs-on: ubuntu-latest
