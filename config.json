@@ -11,11 +11,10 @@
         "nextest-rs/nextest"
     ],
     "allowedPostUpgradeCommands": [
-        "^./scripts/renovate-post-upgrade.sh"
+        "^./scripts/renovate-post-upgrade.sh$"
     ],
     "onboarding": false,
     "requireConfig": "optional",
-    "prConcurrentLimit": 10,
     "packageRules": [
         {
             "matchUpdateTypes": [
