@@ -11,6 +11,9 @@
         "workspace-hack/**",
         "**/vendor/**"
     ],
+    "addLabels": [
+        "dependencies"
+    ],
     "packageRules": [
         {
             "matchUpdateTypes": [
