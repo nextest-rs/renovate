@@ -9,6 +9,7 @@
     "automergeSchedule": ["after 8pm", "before 6am"],
     "ignorePaths": [
         "workspace-hack/**",
+        "**/fixtures/**",
         "**/vendor/**"
     ],
     "addLabels": [
