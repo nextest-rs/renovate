@@ -1,0 +1,10 @@
+{
+    "packageRules": [
+        {
+            "matchManagers": ["cargo"],
+            "postUpgradeTasks": {
+                "commands": ["scripts/renovate-post-upgrade.sh"]
+            }
+        }
+    ]
+}
