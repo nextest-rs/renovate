@@ -1,10 +1,14 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "config:base"
+        "config:recommended"
     ],
     "platform": "github",
     "repositories": [
+        "nextest-rs/datatest-stable",
+        "nextest-rs/future-queue",
+        "nextest-rs/mukti",
+        "nextest-rs/nexlint",
         "nextest-rs/nextest",
         "nextest-rs/renovate"
     ],

@@ -13,7 +13,9 @@
     "packageRules": [
         {
             "matchUpdateTypes": [
-                "patch"
+                "patch",
+                "pin",
+                "pinDigest"
             ],
             "automerge": true
         },
@@ -23,6 +25,12 @@
                 "major"
             ],
             "automerge": false
+        },
+        {
+            "matchManagers": [
+                "github-actions"
+            ],
+            "rangeStrategy": "pin"
         }
     ]
 }
