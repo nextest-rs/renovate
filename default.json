@@ -1,7 +1,8 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "config:recommended"
+        "config:recommended",
+        "helpers:pinGitHubActionDigests"
     ],
     "timezone": "America/Los_Angeles",
     "schedule": ["after 8pm", "before 6am"],
@@ -25,12 +26,6 @@
                 "major"
             ],
             "automerge": false
-        },
-        {
-            "matchManagers": [
-                "github-actions"
-            ],
-            "rangeStrategy": "pin"
         }
     ]
 }
