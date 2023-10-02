@@ -15,6 +15,7 @@
     "addLabels": [
         "dependencies"
     ],
+    "gitAuthor": "Nextest Bot <bot@nexte.st>",
     "packageRules": [
         {
             "matchUpdateTypes": [
