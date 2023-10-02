@@ -5,6 +5,7 @@
     ],
     "platform": "github",
     "repositories": [
+        "guppy-rs/guppy",
         "nextest-rs/datatest-stable",
         "nextest-rs/future-queue",
         "nextest-rs/mukti",
