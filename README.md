@@ -9,8 +9,7 @@ We use a [self-hosted
 instance](https://docs.renovatebot.com/getting-started/running/#self-hosting-renovate) of Renovate.
 This is so that we can run [post-upgrade
 commands](https://docs.renovatebot.com/self-hosted-configuration/#allowedpostupgradecommands),
-specifically updating the  
-[`workspace-hack` crate](https://github.com/nextest-rs/nextest/tree/main/workspace-hack) managed by
+specifically updating the [`workspace-hack` crate](https://github.com/nextest-rs/nextest/tree/main/workspace-hack) managed by
 [`cargo hakari`](https://docs.rs/cargo-hakari).
 
 * The instance runs as a [periodic GitHub
