@@ -2,7 +2,8 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "config:recommended",
-        "helpers:pinGitHubActionDigests"
+        "helpers:pinGitHubActionDigests",
+        "mergeConfidence:all-badges"
     ],
     "timezone": "America/Los_Angeles",
     "schedule": ["after 8pm", "before 6am"],
