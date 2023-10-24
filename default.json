@@ -38,7 +38,7 @@
                 "action"
             ],
             "matchSourceUrls": [
-                "https://github.com/actions/checkout/",
+                "https://github.com/actions/checkout",
                 "https://github.com/taiki-e/create-gh-release-action",
                 "https://github.com/taiki-e/install-action",
                 "https://github.com/taiki-e/upload-rust-binary-action"
