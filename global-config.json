@@ -11,6 +11,7 @@
         "nextest-rs/mukti",
         "nextest-rs/nexlint",
         "nextest-rs/nextest",
+        "nextest-rs/quick-junit",
         "nextest-rs/renovate"
     ],
     "allowedPostUpgradeCommands": [
