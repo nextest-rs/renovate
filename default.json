@@ -45,6 +45,11 @@
                 "https://github.com/taiki-e/upload-rust-binary-action"
             ],
             "automerge": true
+        },
+        {
+              "matchDatasources": ["crate"],
+              "matchCurrentValue": "/^\\d+(\\.\\d+)?$/",
+              "rangeStrategy": "update-lockfile"
         }
     ],
     "lockFileMaintenance": {
