@@ -38,6 +38,7 @@ Default repository-specific configuration goes in [`default.json`](default.json)
 Comments:
 
 * [`ignorePaths`](https://docs.renovatebot.com/configuration-options/#ignorepaths) is non-additive, so if you wish to ignore a new path in a repo it's best to add it to the default `ignorePaths`.
+* We use the `update-lockfile` strategy for crates specified as `x` or `x.y`; see [Renovate discussion #28280](https://github.com/renovatebot/renovate/discussions/28280) for more.
 
 Extra, commonly used sets of repository-specific configuration go in this repository within other files. For example, if a post-upgrade script needs to be run, check it in as an executable `scripts/renovate-post-upgrade.sh` ([example](https://github.com/nextest-rs/nextest/blob/main/scripts/renovate-post-upgrade.sh)) and import [`github>nextest-rs/renovate:post-upgrade`](post-upgrade.json).
 
