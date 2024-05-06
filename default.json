@@ -47,9 +47,13 @@
             "automerge": true
         },
         {
-              "matchDatasources": ["crate"],
-              "matchCurrentValue": "/^\\d+(\\.\\d+)?$/",
-              "rangeStrategy": "update-lockfile"
+            "matchDatasources": ["crate"],
+            "rangeStrategy": "bump"
+        },
+        {
+            "matchDatasources": ["crate"],
+            "matchCurrentValue": "/^\\d+(\\.\\d+)?$/",
+            "rangeStrategy": "update-lockfile"
         }
     ],
     "lockFileMaintenance": {
