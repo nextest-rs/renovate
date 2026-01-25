@@ -54,6 +54,11 @@
             "matchDatasources": ["crate"],
             "matchCurrentValue": "/^\\d+(\\.\\d+)?$/",
             "rangeStrategy": "update-lockfile"
+        },
+        {
+            "matchPackageNames": ["locked-tripwire"],
+            "matchManagers": ["cargo"],
+            "enabled": false
         }
     ],
     "lockFileMaintenance": {
