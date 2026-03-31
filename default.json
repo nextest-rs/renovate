@@ -56,6 +56,10 @@
             "rangeStrategy": "update-lockfile"
         },
         {
+            "matchManagers": ["cargo"],
+            "minimumReleaseAge": "7 days"
+        },
+        {
             "matchPackageNames": ["locked-tripwire"],
             "matchManagers": ["cargo"],
             "enabled": false
