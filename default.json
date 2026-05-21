@@ -60,6 +60,16 @@
             "minimumReleaseAge": "7 days"
         },
         {
+            "matchManagers": ["cargo"],
+            "matchSourceUrls": [
+                "https://github.com/camino-rs/**",
+                "https://github.com/guppy-rs/**",
+                "https://github.com/nextest-rs/**",
+                "https://github.com/sunshowers-code/**"
+            ],
+            "minimumReleaseAge": "1 day"
+        },
+        {
             "matchPackageNames": ["locked-tripwire"],
             "matchManagers": ["cargo"],
             "enabled": false
